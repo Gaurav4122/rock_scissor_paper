@@ -1,0 +1,123 @@
+*{
+    padding:0px;
+    margin:0px;
+
+}
+
+body{
+    background-color: rgb(193, 240, 240);
+}
+h1{
+    text-align: center;
+    padding:8px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 35vw;
+    background-color:rgb(201, 185, 155);
+    box-shadow: 8px 8px 10px palevioletred;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+
+.start{
+    height:60px;
+    width:60px;
+    background-color:cornflowerblue;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left:69px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border: 2px solid red;
+    transition: all;
+    transition-duration: 5s;
+    animation: gaurav 5s linear infinite;
+}
+
+@keyframes gaurav {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.box{
+    padding:10px;
+    background-color: aqua;
+    height:200px;
+    width:200px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px purple;
+}
+
+p{
+    text-align: center;
+    font-size:40px;
+
+}
+
+/* .select1,.select2{
+    text-align: center;
+    margin-top:40px;
+    font-size:40px;
+    font-weight: bold;
+
+} */
+
+
+#result{
+    font-size: 16px;
+    padding:10px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    bottom:105px;
+    font-size: 40px;
+
+}
+
+@media (max-width:480px){
+    h1{
+        text-align:center;
+        padding:10px;
+        border-radius: 20px;
+        margin-left:72px;
+        font-size:20px;
+        margin-top:50px;
+        /* font-size:10px; */
+        /* background-color:rgb(190, 139, 44); */
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:80vh;
+        position: relative;
+    }
+
+    .start{
+        font-weight: bold;
+        margin-top: 90px;
+        margin-left:40px;
+        text-align: center;
+        margin-top:40px;
+    }
+    #result{
+        bottom:65px;
+    
+    }
+}
